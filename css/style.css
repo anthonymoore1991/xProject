@@ -1,0 +1,59 @@
+body
+{	background-image:url('../carbon_fibre.png');
+	background-attachment:fixed;
+	}
+.jumbotron
+{
+	background-image:url('../fresh_snow.png');	
+	background-attachment:fixed;
+	min-height:500px;
+	margin-bottom:0px;
+	text-align:center;
+}
+.alt1
+{
+	min-height:400px;
+	color:white;
+}
+.padding
+{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.alt2
+{
+	min-height:150px;
+	color:white;
+	text-align:center;
+}
+.navbar-inverse
+{
+	background-image:url('../carbon_fibre.png');
+	background-attachment:fixed;
+}
+.contact
+{
+	background-image:url('../fresh_snow.png');
+	background-attachment:fixed;
+}
+.navbar-toggle
+{
+	color:#9D9D9D;
+}
+#top
+{
+	text-decoration:none;
+	color:#9D9D9D;
+}
+.pic
+{
+	margin:0 auto;
+}
+.welcome
+{
+	margin:0 auto;
+}
+#port
+{
+	color:white;
+}

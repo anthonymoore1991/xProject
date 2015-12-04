@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Anthony Moore Web Developer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="sss/sss.min.js"></script>
+		<link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+		<script>
+			jQuery(function($) {
+			$('.slider').sss();
+			});
+		</script>
+	</head>
+	
+	<body>
+	<div class="navbar-static-top navbar-inverse" id="home">
+		<div class="container">
+			<div class="navbar-brand">
+				<p id="top">Anthony Moore Online Portfolio</p>
+			</div>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+				Menu
+			</button>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="jumbotron" id="jumbo">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6" id="pic">
+					<img src="me.jpg" alt="image">
+				</div>
+				<div class="col-md-6" id="welcome">
+					<h1>Anthony Moore</h1>
+					<h2>Web Developer and Designer</h2><br />
+					<p>Welcome to my online portfolio</p>
+					<p>Click 
+					<a href="https://ie.linkedin.com/in/anthony-moore-394604108" target="_blank" class="btn btn-primary btn-lg">here</a>
+					to view my LinkedIn profile.</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+	<div class="alt1" id="about">
+		<div class="container">
+			<div class="row">
+				<h1 class="text-center">About</h1>
+				<div class="col-md-6">
+					<p class="text-justify">Hi my name is Anthony Moore and I am a web developer and designer based in Dublin. 
+					I am currently studying BSc honours in computing in the national college of Ireland, I am half way through my first year. 
+					I am also available for some freelance work, so if you are interested in hearing from me please leave a message and I will get back to you at my earliest convince. 
+					I do have some experience in web design as I have already done a level 5 P.L.C course in web design. During my time in that part time course I learned basic HTML and inline CSS I also built a web site using Adobe Dreamweaver.
+					Since I have started here in NCI I have increased my skills in HTML, external CSS, JavaScript and JQuery. I plan to incorporate all of these skills to further develop them in all projects in and outside of college. 
+					</p>
+				</div>
+				<div class="col-md-6">
+					<p class="text-justify">At secondary level I have passed both Junior and Leaving certificate. When I finished secondary school I was not sure what 
+					profession I would have liked to pursue a career in. I decided to do a level 5 certificate in Construction, Technology and Architecture. 
+					As a result of Ireland being hit by the recession it would have been very tough to get a job in that sector.
+					I decided to do a course in Web Design which I would come to love and was also the inspiration I needed to apply for a BSc Honours in Computing
+					at the National College of Ireland. I am currently half way through my first year and really enjoying my time at NCI.<br />
+					I have been working part-time in retail department store Debenhams where I have had gained and developed excellent customer service and communication skills. 
+					</p>
+				</div>
+			</div>
+			<div class="text-center">
+			<h3>Below you can find a gallery of some of my college exercises.</h3>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container" id="portfolio">
+		<h1 class="text-center" id="port">Portfolio</h1>
+		<div class="slider">
+			<img src="textexercise.png" alt="image" />
+			<img src="textexercise1.png" alt="image" />		
+			<img src="divexercise.png" alt="image" />		
+			<img src="divexercise1.png" alt="image" />		
+			<img src="divexample.png" alt="image" />		
+			<img src="asimpleform.png" alt="image" />		
+			<img src="floatsexercise.png" alt="image" />		
+			<img src="floatsexercise1.png" alt="image" />			
+		</div>
+	</div>
+	
+	<div class="contact">
+		<div class="container padding" id="contact">
+			<h1 class="text-center">Contact</h1>
+			<form role="form" action="contact.php" method="post">
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" class="form-control" id="email" name="email" placeholder="example@example.com" />
+				</div>
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name Here" />
+				</div>
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea class="form-control" name="message" id="message" placeholder="Enter Your Message Here"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+				
+			</form>
+		</div>
+	</div>
+	
+	<div class="alt2">
+		<div class="container">
+			<footer>&copy; Anthony Moore<br />
+				<a class="github-button" href="https://github.com/anthonymoore1991" data-style="mega" aria-label="Follow @anthonymoore1991 on GitHub">Follow @anthonymoore1991</a>
+				<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script><br />
+				<a href="#home">Back to Top</a>
+			</footer>
+		</div>
+	</div>
+	
+	<script src="js/bootstrap.js"></script>
+	<script>$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+			$('html,body').animate({
+			  scrollTop: target.offset().top
+			}, 1000);
+			return false;
+		  }
+		}
+	  });
+	});
+	</script>
+	</body>
+</html>
